@@ -1,0 +1,117 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center; 
+    width: 1280px;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+nav {
+    width: 200px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ddd;
+}
+
+section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#code-section1,
+#code-section2 {
+    padding: 20px;
+    box-sizing: border-box;
+  
+}
+
+/* styles for the nicely styled button */
+.styled-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fff;
+    border: 2px solid #3498db;
+    transition: background-color 0.3s;
+}
+
+.styled-button:hover {
+    background-color: #2980b9;
+}
+
+
+
+#home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Adjust the height as needed */
+}
+
+.home-content {
+    text-align: center;
+}
+
+.home-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.half-split-container {
+    display: flex;
+}
+
+.left-half-div, .right-half-div {
+    flex: 1;
+    padding: 20px;
+}
+
+
+
