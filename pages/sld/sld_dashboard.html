@@ -1,0 +1,65 @@
+
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+
+    <!-- Include the reusable header -->
+    <div id="header-container" include-html="/assets/partials/header.html"></div>
+
+    <main>
+
+       <!-- Include the reusable menu -->
+<div id="menu-container" include-html="/assets/partials/menu.html"></div>
+
+<section>
+
+    <section>
+        <div id="code-section1">
+            <!-- Embed your code or content for the first section here -->
+            <h2>Schedule</h2>
+            <script type="text/javascript" src="https://c8afw558.caspio.com/dp/7ce9c000e1f43e1da09a4f33a29c/emb"></script>
+            <h2>Upcoming interviews</h2>
+            <script type="text/javascript" src="https://c8afw558.caspio.com/dp/7ce9c000841789bca9a34938aa08/emb"></script>
+        </div>
+        
+       
+    </section>
+    
+    <div class="half-split-container">
+        <div class="left-half-div">
+            <h2>Vacant shifts</h2>
+       
+        </div>
+        <div class="right-half-div">
+                      
+        </div>
+    </div>
+
+
+    
+</section>
+    </main>
+
+    <!-- Include the reusable footer -->
+    <div id="footer-container" include-html="/assets/partials/footer.html"></div>
+
+    <script src="/assets/script.js"></script>
+ 
+</body>
+
+</html>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+    var shiftParameter = (new URLSearchParams(window.location.search)).get("shift"); 
+    var stringSparam = string(shiftParameter);
+        var elems = document.getElementsByTagName("td");
+        for (var i=0, m=elems.length; i<m; i++) {
+        if (elems[i].innerHTML==stringSparam )  { elems[i].style.backgroundColor="green";}
+        }
+        </SCRIPT>

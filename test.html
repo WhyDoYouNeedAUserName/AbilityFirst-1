@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Include the reusable header -->
+    <div id="header-container" include-html="/assets/partials/header.html"></div>
+
+    <main>
+
+       <!-- Include the reusable menu -->
+        <div id="menu-container" include-html="/assets/partials/menu.html"></div>
+
+        <section>
+            <div id="code-section1">
+                <!-- Embed your code or content for the first section here -->
+                <h2>Vacant shifts</h2>
+                <script type="text/javascript" src="https://c8afw558.caspio.com/dp/7ce9c0009eb2f9e5bc0848088185/emb"></script>
+            </div>
+
+            <!-- Bootstrap Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Content goes here -->
+                            <p>This is your modal content.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Include the reusable footer -->
+    <div id="footer-container" include-html="/assets/partials/footer.html"></div>
+
+    <!-- Include Bootstrap and jQuery scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Script to open the Bootstrap modal -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var openModalButton = document.getElementById('openModalButton');
+
+            openModalButton.addEventListener('click', function (event) {
+                event.preventDefault();
+                $('#myModal').modal('show');
+            });
+        });
+    </script>
+
+    <script src="/assets/script.js"></script>
+
+</body>
+</html>

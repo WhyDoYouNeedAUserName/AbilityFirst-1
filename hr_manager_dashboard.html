@@ -1,0 +1,63 @@
+
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+
+    <!-- Include the reusable header -->
+    <div id="header-container" include-html="/assets/partials/header.html"></div>
+
+    <main>
+
+       <!-- Include the reusable menu -->
+<div id="menu-container" include-html="/assets/partials/menu.html"></div>
+
+<section>
+
+    
+        <div id="code-section1">
+            <!-- Embed your code or content for the first section here -->
+            <h2>Add prospect to shift</h2>
+            <script type="text/javascript" src="https://c8afw558.caspio.com/dp/7ce9c0000d51cf18c29c4e79abad/emb"></script>
+        </div>        
+       
+  
+    
+    <div class="half-split-container">
+        <div class="left-half-div">
+            <h2>Vacant shifts</h2>
+        <script type="text/javascript" src="https://c8afw558.caspio.com/dp/7ce9c0009eb2f9e5bc0848088185/emb"></script>
+        </div>
+        <div class="right-half-div">
+            <h2>Prospects</h2>
+            <script type="text/javascript" src="https://c8afw558.caspio.com/dp/7ce9c0007f65a04d7fe640c3ba54/emb"></script>            
+        </div>
+    </div>
+
+
+    
+</section>
+    </main>
+
+    <!-- Include the reusable footer -->
+    <div id="footer-container" include-html="/assets/partials/footer.html"></div>
+
+    <script src="/assets/script.js"></script>
+ 
+</body>
+
+</html>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+    var shiftParameter = (new URLSearchParams(window.location.search)).get("shift"); 
+    var stringSparam = string(shiftParameter);
+        var elems = document.getElementsByTagName("td");
+        for (var i=0, m=elems.length; i<m; i++) {
+        if (elems[i].innerHTML==stringSparam )  { elems[i].style.backgroundColor="green";}
+        }
+        </SCRIPT>

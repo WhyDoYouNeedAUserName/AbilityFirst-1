@@ -46,3 +46,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Call the function to include HTML files
         includeHTML();
+
+
+/* This will add teh role based menu
+
+// Function to load Caspio role menu script
+function loadCaspioScript(url) {
+    var caspioScript = document.createElement('script');
+    caspioScript.type = 'text/javascript';
+    caspioScript.src = url;
+    document.body.appendChild(caspioScript);
+}
+
+document.addEventListener('DOMContentLoaded', function () {  
+
+    // Load Caspio scripts after the menu is included
+    loadCaspioScript('https://c8afw558.caspio.com/dp/7ce9c000ece61586d7864d0db0fb/emb');
+});
+*/
+
+
